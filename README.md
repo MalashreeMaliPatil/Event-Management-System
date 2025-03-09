@@ -18,8 +18,8 @@ Before running the project, ensure you have the following installed:
    First, clone the project to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/your-project-name.git
-   cd your-project-name
+   git clone https://github.com/MalashreeMaliPatil/Event-Management-System
+   cd Event-Management-System
  2. **Install Project Dependencies**
    npm install
   
