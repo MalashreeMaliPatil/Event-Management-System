@@ -1,6 +1,8 @@
-##  instructions on how to set up and run the project.
 
-# Angular 13 Project with Mock JSON Server
+
+# Angular Project with Mock JSON Server
+
+##  instructions on how to set up and run the project.
 
 This is an Angular 13 project that uses a mock `json-server` for simulating backend API calls with a `db.json` file.
 
