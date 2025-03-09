@@ -1,0 +1,30 @@
+.login-container, .register-container {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  mat-card {
+    padding: 20px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  mat-card-footer {
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #3f51b5;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

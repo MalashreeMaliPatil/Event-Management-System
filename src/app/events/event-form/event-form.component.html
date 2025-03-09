@@ -1,0 +1,76 @@
+<!-- <mat-card>
+    <mat-card-header>
+      <mat-card-title>Create New Event</mat-card-title>
+    </mat-card-header>
+  
+    <mat-card-content>
+      <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill">
+          <mat-label>Event Name</mat-label>
+          <input matInput formControlName="name" required />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Event Date</mat-label>
+          <input matInput type="date" formControlName="date" required />
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Event Description</mat-label>
+          <textarea matInput formControlName="description" required></textarea>
+        </mat-form-field>
+  
+        <div class="form-actions">
+          <button mat-raised-button color="primary" type="submit" [disabled]="eventForm.invalid">
+           {{buttonLabel}}
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+   -->
+
+   <mat-card class="event-card">
+    <mat-card-header>
+      <mat-card-title>Create New Event</mat-card-title>
+    </mat-card-header>
+  
+    <mat-card-content>
+      <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+        <!-- Event Name Field -->
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Event Name</mat-label>
+          <input matInput formControlName="name" required />
+          <mat-error *ngIf="eventForm.get('name')?.hasError('required')">
+            Event Name is required
+          </mat-error>
+        </mat-form-field>
+  
+        <!-- Event Date Field -->
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Event Date</mat-label>
+          <input matInput type="date" formControlName="date" required />
+          <mat-error *ngIf="eventForm.get('date')?.hasError('required')">
+            Event Date is required
+          </mat-error>
+        </mat-form-field>
+  
+        <!-- Event Description Field -->
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Event Description</mat-label>
+          <textarea matInput formControlName="description" required></textarea>
+          <mat-error *ngIf="eventForm.get('description')?.hasError('required')">
+            Event Description is required
+          </mat-error>
+        </mat-form-field>
+  
+        <!-- Submit Button -->
+        <div class="form-actions">
+          <button mat-raised-button color="primary" type="submit" [disabled]="eventForm.invalid">
+            {{ buttonLabel }}
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  

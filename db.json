@@ -1,0 +1,41 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Event 1",
+      "date": "2025-03-10",
+      "description": "This is the description for Event 1 edited"
+    },
+    {
+      "id": "2",
+      "name": "Event 2",
+      "date": "2025-03-12",
+      "description": "This is the description for Event 2."
+    },
+    {
+      "id": "3",
+      "name": "name",
+      "date": "2025-03-18",
+      "description": "appointment editted"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "test@test.com",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "email": "user@example.com",
+      "password": "userpass456"
+    },
+    {
+      "id": "2910",
+      "name": "mala",
+      "email": "mala@s",
+      "password": "Password",
+      "confirmPassword": "Password"
+    }
+  ]
+}
